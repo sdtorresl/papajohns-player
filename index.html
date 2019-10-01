@@ -10,9 +10,14 @@
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="node_modules/milligram/dist/milligram.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/jplayer/dist/jplayer/jquery.jplayer.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div class="main-container">
+        <div id="player"></div>
         <div class="player-container container">
             <div class="row">
                 <div class="column" id="cover">
@@ -21,8 +26,8 @@
                 <div id="info" class="cover column column-75">
                     <div class="row" id="media-info">
                         <div class="column">
-                            <div id="title" class="row">This is what you came for</div>
-                            <div id="artist" class="row">Calvin Harris ft. Rihanna</div>
+                            <div id="title" class="row">Cargando...</div>
+                            <div id="artist" class="row">Papa Johns Radio</div>
                         </div>
                     </div>
     
@@ -40,21 +45,28 @@
             </div>
     
             <div class="row">
-                <div class="column column-20" id="volume-controls">
+                <div class="column column-30" id="volume-controls">
                     <div class="down-button"></div>
                     <div class="up-button"></div>
-                    <div class="volume-bar">
-                        <div class="current-volume"></div>
+                    <div class="jp-progress">
+                        <div class="jp-seek-bar">
+                            <div class="jp-play-bar">
+                                <div class="jp-ball"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
     
-                <div class="column" id="player-controls">
-                    <div class="player-button">
-                        <img src="img/Boton Play.png" alt="Play">
-                    </div>
+                <div class="column jp-controls" id="player-controls">
+                    <a href="javascript:;" class="jp-play">
+                        <img src="img/Boton Play.png" alt="">
+                    </a>
+                    <a href="javascript:;" class="jp-pause">
+                        <img src="img/stop-button.png" alt="">
+                    </a>
                 </div>
     
-                <div class="column column-20" id="social-controls">
+                <div class="column column-30" id="social-controls">
                     <div class="row">
                         <div class="column">
                             <a href="https://es-la.facebook.com/papajohnscolombia/" title="Facebook">
