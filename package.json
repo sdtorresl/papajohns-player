@@ -1,0 +1,30 @@
+{
+  "name": "papajohns-player",
+  "version": "1.0.0",
+  "description": "A web based player for Papa Johns radio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdtorresl/papajohns-player.git"
+  },
+  "keywords": [
+    "HTML5",
+    "Player",
+    "Javascript",
+    "Icecast"
+  ],
+  "author": "Sergio Torres",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/sdtorresl/papajohns-player/issues"
+  },
+  "homepage": "https://github.com/sdtorresl/papajohns-player#readme",
+  "dependencies": {
+    "jplayer": "^2.9.2",
+    "jquery": "^3.4.1",
+    "sass": "^1.22.12"
+  }
+}
