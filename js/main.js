@@ -13,7 +13,6 @@ function httpGet(URL) {
 /** Update metadata of actual song
  */
 function updateMetadata() {
-
     data = 'tag=getTags';
     $.ajax({
         data: data,
@@ -67,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     player.src = source;
     player.autoplay = false;
     player.volume = 0.7;
-    
+
     btnPlayPause = document.getElementById('btn-play-pause');
     btnMute = document.getElementById('btn-mute');
     progressBar = document.getElementById('progress-bar');
@@ -185,5 +184,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    setInterval(updateMetadata(), 5000);
 });
+
+window.setInterval(updateMetadata, 1000);
