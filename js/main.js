@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const player = new Audio();
     player.src = source;
-    player.autoplay = false;
+    player.autoplay = true;
     player.volume = 0.7;
 
     btnPlayPause = document.getElementById('btn-play-pause');
