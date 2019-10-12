@@ -52,6 +52,7 @@ body {
     margin-right: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #media {
@@ -194,7 +195,6 @@ body {
         min-height: 100px;
         font-size: 3.5rem;
         display: flex;
-        align-items: center;
     }
 
     #artist {
@@ -276,16 +276,18 @@ progress::-moz-progress-bar {
         background: yellow;
     }
 }
+
 @media only screen and (max-width: 800px) { 
     .player-container {
         padding:3rem;
         max-width: 90%;
     }
-    #cover img {
-        width: 133px;
-        height: 166px;
+
+    #cover {
+        min-height: 300px;
     }
 }
+
 @media only screen and (max-width: 768px) {
     .player-container {
         padding:2.5rem;
@@ -294,19 +296,13 @@ progress::-moz-progress-bar {
     .player-container:after {
         height: 190px;
     }
-    #cover img {
-        width: 133px;
-        height: 166px;
-    }
     #info #title {
-        color: white;
-        background: #00916e;
-        padding: 30px;
-        line-height: 0px;
-        font-weight: bold;
-        font-size: 2.5rem;
+        padding: 20px;
+        font-size: 1.8rem;
+        min-height: none;
+        height: auto;
     }
-    #info #artist {
+    #artist {
         padding:30px;
         line-height: 35px;
     }
@@ -319,7 +315,6 @@ progress::-moz-progress-bar {
         align-content: space-between;
     }
     #player-controls a {
-
         height: 45px;
         width: 45px;
         background-size: 45px;
@@ -329,6 +324,7 @@ progress::-moz-progress-bar {
         height: 40px;
         margin: 10px;
         padding: 0px;
+
     }
     .d-flex {
         display: flex;
@@ -347,6 +343,9 @@ progress::-moz-progress-bar {
 }
 
 @media only screen and (max-width: 420px) { 
+    #cover {
+        min-height: 200px;
+    }
     .player-container {
         padding:2rem;
         max-width:90%;
@@ -355,19 +354,23 @@ progress::-moz-progress-bar {
         color: white;
         background: #00916e;
         padding: 20px;
-        line-height: 0px;
         font-weight: bold;
         font-size: 1.8rem;
+        min-height: auto;
     }
     #info #artist {
         padding:20px;
         line-height: 20px;
         font-size: 2rem;
     }
-    #player-controls a {
-        height: 40px;
-        width: 40px;
-        background-size: 40px;
+    #player-controls {
+        justify-content: end;
+     
+        a {
+            height: 40px;
+            width: 40px;
+            background-size: 40px;
+        }
     }
     #media {
         display: flex;
@@ -384,11 +387,21 @@ progress::-moz-progress-bar {
         justify-content: space-around;
         align-items: center;
         align-content: space-between;
-
     }
     .social-link {
         width: 40px;
         height: 40px;
         padding: 0px;
+    }
+    #social-controls {
+        margin-top: 0.5rem;
+        .row {
+            flex-direction: row;
+
+            .column {
+                display: flex;
+                justify-content: center
+            }
+        }
     }
 }
