@@ -35,8 +35,8 @@ function updateMetadata() {
                     title;
                 }
 
-                $("#artist").text(artist);
-                $("#title").text(title);
+                $("#artist p").text(artist);
+                $("#title p").text(title);
 
                 if (previousArtist != undefined) {
                     $("#previousSong").html(previousArtist + ' - ' + previousTitle);

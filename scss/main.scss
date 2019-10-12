@@ -1,5 +1,6 @@
 @import "_mixins";
-@include font-face("Helvetica", "../fonts/HelveticaLTStd-LT", null, null, "otf");
+@include font-face("Helvetica Neue Cn", "../fonts/HelveticaNeueLTStd-Cn", null, null, "otf");
+@include font-face("Helvetica Neue LtCn", "../fonts/HelveticaNeueLTStd-LtCn", null, null, "otf");
 
 $dark-green: #00916e;
 $light-green: #6cbba8;
@@ -7,7 +8,7 @@ $red: #f61726;
 
 body {
     background: rgb(60, 60, 60);
-    font-family: "Helvetica";
+    font-family: "Helvetica Neue LtCn";
     font-size: 3rem;
 }
 
@@ -60,6 +61,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 #media-controls {
@@ -69,7 +72,6 @@ body {
 	justify-content: space-around;
 	align-items: center;
     align-content: center;
-    margin-top: 2rem;
 }
 
 #player-controls {
@@ -179,21 +181,28 @@ body {
 	justify-content: center;
 	align-items: stretch;
     align-content: stretch;
+
+    p {
+        margin: 0;
+    }
     
     #title {
+        font-family: "Helvetica Neue Cn";
         color: white;
         background: $dark-green;
         padding: 15px 30px;
-        line-height: 80px;
-        font-weight: bold;
+        min-height: 100px;
         font-size: 3.5rem;
+        display: flex;
+        align-items: center;
     }
 
     #artist {
         color: white;
         background: $light-green;
         padding: 15px 30px;
-        line-height: 50px;
+        font-size: 3rem;
+        margin-bottom: 20px;
     }
 
     #elapsed-time {
