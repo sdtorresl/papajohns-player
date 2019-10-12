@@ -121,7 +121,6 @@ body {
         color: white;
         line-height: 30px;
         font-size: 20px;
-        margin-top: 1px;
         transition: 0.25s linear;
 
         &:hover {
@@ -136,7 +135,7 @@ body {
         }
 
         &#volume-up {
-            margin-left: 1px;
+            margin: 0 5%;
         }
     }
 
