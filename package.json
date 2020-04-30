@@ -24,7 +24,7 @@
   "homepage": "https://github.com/sdtorresl/papajohns-player#readme",
   "dependencies": {
     "jplayer": "^2.9.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "milligram": "^1.3.0",
     "sass": "^1.22.12"
   },
